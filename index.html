@@ -229,6 +229,65 @@ select,input[type=search],input[type=text]{border-radius:999px;box-shadow:0 8px 
 .rd-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
 .rd-btn{padding:11px 18px;border-radius:999px;background:#fff;color:var(--ac);font-weight:600;font-size:14px;box-shadow:0 10px 22px -12px var(--sh);border:1px solid var(--bd)}
 .rd-btn.pri{background:linear-gradient(150deg,var(--ind1),var(--ind2));color:#fff;border:0;box-shadow:0 12px 20px -10px rgba(59,49,133,.85)}
+
+/* ===== Kolom status sejajar + font menu lebih kecil (Beranda tidak diubah) ===== */
+.cr{display:flex;flex-direction:column;align-items:stretch;gap:6px;flex:none;width:max-content;min-width:104px;max-width:142px}
+.cr .pill,.cr .badge{display:block;text-align:center;overflow:hidden;text-overflow:ellipsis;padding:5px 10px}
+body:not([data-r="home"]) .wrap>.hd:first-child h1{font-size:24px}
+body:not([data-r="home"]) .wrap>.hd:first-child .sub{font-size:13px}
+body:not([data-r="home"]) .wrap h2{font-size:14.5px;margin:20px 6px 8px}
+body:not([data-r="home"]) .t{font-size:15px;line-height:1.3}
+body:not([data-r="home"]) .s{font-size:12.5px}
+body:not([data-r="home"]) .pill,body:not([data-r="home"]) .badge{font-size:11.5px}
+body:not([data-r="home"]) .card{padding:13px 14px}
+body:not([data-r="home"]) .card.rep{padding:18px 14px 14px}
+body:not([data-r="home"]) .chip,body:not([data-r="home"]) .hz .chip{font-size:13px;padding:7px 14px}
+body:not([data-r="home"]) input[type=search],body:not([data-r="home"]) select{font-size:14px;padding-top:10px;padding-bottom:10px}
+body:not([data-r="home"]) .rsel select{font-size:14px}
+body:not([data-r="home"]) .kpi b{font-size:28px}body:not([data-r="home"]) .kpi span{font-size:12.5px}
+body:not([data-r="home"]) .rt b{font-size:27px}body:not([data-r="home"]) .rl,body:not([data-r="home"]) .rb .rl{font-size:12px}
+body:not([data-r="home"]) .rtot b{font-size:34px}body:not([data-r="home"]) .rh{font-size:18px}
+body:not([data-r="home"]) .rb,body:not([data-r="home"]) .mr{font-size:13.5px}
+body:not([data-r="home"]) .rcol,body:not([data-r="home"]) .cols>div{font-size:11px}
+body:not([data-r="home"]) .tile b{font-size:14.5px}body:not([data-r="home"]) .tile span{font-size:12.5px}
+body:not([data-r="home"]) .pre{font-size:14.5px}
+body:not([data-r="home"]) .kv{font-size:13.5px}
+body:not([data-r="home"]) .lnk{font-size:14.5px;padding:12px}
+body:not([data-r="home"]) .rd-t{font-size:14.5px}body:not([data-r="home"]) .rd-d{font-size:13px}
+body:not([data-r="home"]) .rd-box b{font-size:21px}body:not([data-r="home"]) .rd-box span{font-size:12px}
+body:not([data-r="home"]) .rd-btn{font-size:13px;padding:10px 16px}
+body:not([data-r="home"]) #sheet .t[style*="font-size:22px"]{font-size:19px!important}
+body:not([data-r="home"]) #sheet .t[style*="font-size:18px"]{font-size:16px!important}
+
+/* ===== Rapikan: status & badge sejajar satu baris, font menu lebih kecil (Beranda tidak diubah) ===== */
+.ic-meta{margin-top:10px;gap:6px 6px;flex-wrap:wrap;align-items:center;justify-content:flex-start}
+.ic-meta .ic-d{margin:0 0 2px;flex:0 0 100%}.ic-meta .ic-d:empty{display:none}
+.ic-meta .pill,.ic-meta .badge{display:inline-flex;align-items:center;height:24px;padding:0 11px;font-size:11.5px;line-height:1;font-weight:600}
+.rrow .pill,.rrow .badge{display:inline-flex;align-items:center;height:26px;padding:0 12px;font-size:11.5px;line-height:1}
+.pill,.badge{font-size:11.5px}
+.wrap:not(.home) h1{font-size:24px}
+.wrap:not(.home) .sub{font-size:13px}
+.wrap:not(.home) h2{font-size:14.5px}
+.wrap:not(.home) .t{font-size:15px;line-height:1.3}
+.wrap:not(.home) .s{font-size:12.5px}
+.wrap:not(.home) .kpi b{font-size:28px}.wrap:not(.home) .kpi span{font-size:12.5px}
+.wrap:not(.home) .rt b{font-size:26px}.wrap:not(.home) .rl,.wrap:not(.home) .rb .rl{font-size:12px}
+.wrap:not(.home) .rtot b{font-size:32px}
+.wrap:not(.home) .rh{font-size:18px}
+.wrap:not(.home) .rb{font-size:13px}
+.wrap:not(.home) .rcol,.wrap:not(.home) .cols>div{font-size:11px}
+.wrap:not(.home) .chip{font-size:13.5px}.wrap:not(.home) .hz .chip{font-size:13px;padding:7px 14px}
+.wrap:not(.home) select,.wrap:not(.home) input[type=search],.wrap:not(.home) input[type=text]{font-size:14px}
+.wrap:not(.home) .rsel select{font-size:14px}
+.wrap:not(.home) .tile b{font-size:14.5px}.wrap:not(.home) .tile span{font-size:12.5px}
+.wrap:not(.home) .mr{font-size:13.5px}
+.wrap:not(.home) .pre{font-size:14px}
+.wrap:not(.home) .ban{font-size:13px}
+.wrap:not(.home) .empty{font-size:14px}
+.wrap:not(.home) .rf{font-size:12px}
+.rrow .t,.sheet .rrow .t{font-size:14.5px}
+.sheet .s{font-size:12.5px}.sheet .kv{font-size:13.5px}.sheet .pre{font-size:14px}.sheet .rsub{font-size:13px}
+.sheet h2{font-size:14.5px}
 </style>
 </head>
 <body>
@@ -370,9 +429,9 @@ const active=k=>(S()[k]||[]).filter(r=>!isDone(k,r));
 
 /* ---------- komponen ---------- */
 function itemCard(k,r,sm){
-  const m=MENUS[k],d=due(k,r),sub=m.su(r);
-  return `<button class="card tap" onclick="openItem('${k}','${esc(r.id)}')"><div class="row sp" style="align-items:flex-start"><div class="grow">${sm?`<div class="s" style="margin:0 0 3px">${m.e} ${esc(m.t)}</div>`:""}<div class="t">${esc(m.ti(r))}</div>${sub?`<div class="s">${esc(sub)}</div>`:""}</div>${pill(k,r)}</div>
-  <div class="row" style="margin-top:8px;flex-wrap:wrap;gap:6px"><span class="s" style="margin:0">${esc(dtxt(k,r)||"")}</span>${d&&d.n<=3?`<span class="badge ${d.c}">${d.t}</span>`:""}</div></button>`;
+  const m=MENUS[k],d=due(k,r),sub=m.su(r),dt=dtxt(k,r)||"";
+  return `<button class="card tap" onclick="openItem('${k}','${esc(r.id)}')"><div class="grow">${sm?`<div class="s" style="margin:0 0 3px">${m.e} ${esc(m.t)}</div>`:""}<div class="t">${esc(m.ti(r))}</div>${sub?`<div class="s">${esc(sub)}</div>`:""}</div>
+  <div class="row ic-meta"><span class="s ic-d">${esc(dt)}</span>${d&&d.n<=3?`<span class="badge ${d.c}">${d.t}</span>`:""}${pill(k,r)}</div></button>`;
 }
 function openItem(k,id){
   const r=byId(k,id);if(!r)return;const m=MENUS[k],d=due(k,r);let h=`<div class="grab"></div>`;
@@ -611,6 +670,7 @@ function render(){
   if(A.boot){app.innerHTML=`<div class="wrap"><div class="empty"><span class="spin"></span></div></div>`;return}
   if(!A.data&&A.K&&!A.lerr){app.innerHTML=`<div class="wrap"><div class="empty"><span class="spin"></span><p>Memuat data…</p></div></div>`;return}
   if(!A.data){app.innerHTML=`<div class="wrap login"><img class="logo" src="icon-180.png" alt=""><h1>Workspace</h1><p class="sub">Buka link dari Mac sekali saja. Kalau layar ini muncul di aplikasi Home Screen, tempel link-nya di bawah.</p><input id="lk" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Tempel link dari Mac" onkeydown="if(event.key==='Enter')pasteLink()"><div class="err">${esc(A.lerr)}</div><button class="go" onclick="pasteLink()">Buka</button></div>`;return}
+  document.body.dataset.r=A.route;
   const y=window.scrollY;
   app.innerHTML=({home:pHome,list:pList,media:pMedia,log:pLog,menu:pMenu}[A.route]||pHome)()+tabs();
   if(window._keep)window.scrollTo(0,y);
